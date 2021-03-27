@@ -123,6 +123,18 @@ void translate(int limit, char chartext[], int inttext[])
         case 66:
             chartext[i] = '?';
             break;
+        case 34:
+            chartext[i] = '!';
+            break;
+        case 25:
+            chartext[i] = '0';
+            break;
+        case 92:
+            chartext[i] = '1';
+            break;
+        case 59:
+            chartext[i] = '2';
+            break;
         default:
             chartext[i]=' ';
             break;

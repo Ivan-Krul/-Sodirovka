@@ -125,6 +125,18 @@ void input(int limit, char chartext[], int inttext[],int openk,int P)
         case '?':
             inttext[i] = 66;
             break;
+        case '!':
+            inttext[i] = 34;
+            break;
+        case '0':
+            inttext[i] = 25;
+            break;
+        case '1':
+            inttext[i] = 92;
+            break;
+        case '2':
+            inttext[i] = 59;
+            break;
         default:
             inttext[i] = 10;
             break;

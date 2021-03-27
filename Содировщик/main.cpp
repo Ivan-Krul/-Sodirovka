@@ -8,7 +8,7 @@
 using namespace std;
 
 const int limit = 256;
-int crypto_power = 100;
+int crypto_power = 1000;
 int inttext[limit];
 bool ch = true;
 char chartext[limit];

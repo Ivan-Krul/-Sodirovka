@@ -5,111 +5,26 @@ map<char, int> translate{
     {'г', 45}, {'ґ', 72}, {'д', 21},
     {'е', 39}, {'є',  97},{'ж', 74},
     {'з', 51}, {'и', 28}, {'і', 65},
-    {'ї', 18}, {'й', 33}, {'к', 83}, };
+    {'ї', 18}, {'й', 33}, {'к', 83},
+    {'л', 85},{'м', 40}, {'н', 57}, 
+    {'о', 43},  {'п', 77},  {'р', 88}, 
+    {'с', 14}, {'т', 11}, {'у', 29}, 
+    {'ф', 76}, {'х', 44}, {'ц', 22}, 
+    {'ч', 41}, {'ш', 35}, {'щ', 67}, 
+    {'ь', 56}, {'ю', 54}, {'я', 17}, 
+    {'-', 79}, {'.', 84}, {',', 99},
+    {'(', 58}, {')', 73}, {'?', 66},
+    {'!', 34}, {'0', 25}, {'1', 92}, 
+    {'2', 59}, {' ', 10}, };
 void input(int limit, char chartext[], int inttext[],int openk,int P)
 {
-    
     cout << "Введіть текст так, що ліміт не перевищував " << limit << " символів (бажанно українські і без пробілів)\n";
     cin >> chartext;
     for (int i = 0;i < limit;i++)
-    {
         inttext[i] = translate[chartext[i]];
-        //case 'л':
-        //    inttext[i] = 85;
-        //    break;
-        //case 'м':
-        //    inttext[i] = 40;
-        //    break;
-        //case 'н':
-        //    inttext[i] = 57;
-        //    break;
-        //case 'о':
-        //    inttext[i] = 43;
-        //    break;
-        //case 'п':
-        //    inttext[i] = 77;
-        //    break;
-        //case 'р':
-        //    inttext[i] = 88;
-        //    break;
-        //case 'с':
-        //    inttext[i] = 14;
-        //    break;
-        //case 'т':
-        //    inttext[i] = 11;
-        //    break;
-        //case 'у':
-        //    inttext[i] = 29;
-        //    break;
-        //case 'ф':
-        //    inttext[i] = 76;
-        //    break;
-        //case 'х':
-        //    inttext[i] = 44;
-        //    break;
-        //case 'ц':
-        //    inttext[i] = 22;
-        //    break;
-        //case 'ч':
-        //    inttext[i] = 41;
-        //    break;
-        //case 'ш':
-        //    inttext[i] = 35;
-        //    break;
-        //case 'щ':
-        //    inttext[i] = 67;
-        //    break;
-        //case 'ь':
-        //    inttext[i] = 56;
-        //    break;
-        //case 'ю':
-        //    inttext[i] = 54;
-        //    break;
-        //case 'я':
-        //    inttext[i] = 17;
-        //    break;
-        //case '-':
-        //    inttext[i] = 79;
-        //    break;
-        //case '.':
-        //    inttext[i] = 84;
-        //    break;
-        //case ',':
-        //    inttext[i] = 99;
-        //    break;
-        //case '(':
-        //    inttext[i] = 58;
-        //    break;
-        //case ')':
-        //    inttext[i] = 73;
-        //    break;
-        //case '?':
-        //    inttext[i] = 66;
-        //    break;
-        //case '!':
-        //    inttext[i] = 34;
-        //    break;
-        //case '0':
-        //    inttext[i] = 25;
-        //    break;
-        //case '1':
-        //    inttext[i] = 92;
-        //    break;
-        //case '2':
-        //    inttext[i] = 59;
-        //    break;
-        //default:
-        //    inttext[i] = 10;
-        //    break;
-        //}
-    }
     cout << "Зашифрований текст:";
     for (int i = 0;i < limit;i++)
-    {
         inttext[i] = (inttext[i]^P)%openk;
-    }
     for (int i = 0;i < limit;i++)
-    {
         cout << inttext[i] << " ";
-    }
 }

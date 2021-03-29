@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <math.h>
+#include <map>
 #include <Windows.h>
 #include "randie.h"
 #include "input.h"
@@ -36,7 +37,7 @@ int main()
 
         cout << "\nПін:" << N <<" "<< E;
         cout << "\nВедіть шифр:";
-        try
+        /*try
         {
             for (int i = 0;i < limit;i++)
             {
@@ -55,6 +56,11 @@ int main()
                 if (inttext[i] == 0)
                     throw i;
             }
+
+        }*/
+        for (int i = 0;i < limit;i++)
+        {
+            cin >> inttext[i];
         }
         for (int i = 0;i < limit;i++)
         {
@@ -74,3 +80,4 @@ int main()
     system("PAUSE");
     return 0;
 }
+
